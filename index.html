@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mario Bros Smooth</title>
+
+<style>
+body{
+  margin:0;
+  background:#5c94fc;
+  overflow:hidden;
+  font-family:Arial;
+}
+canvas{
+  display:block;
+  margin:auto;
+  background:#87ceeb;
+}
+#hud{
+  position:fixed;
+  top:10px;
+  left:10px;
+  color:white;
+  font-size:16px;
+}
+</style>
+</head>
+
+<body>
+
+<canvas id="game" width="800" height="400"></canvas>
+
+<div id="hud">
+  Level: <span id="lvl">1</span> |
+  Coin: <span id="coin">0</span> |
+  ← → Move | ↑ Jump | X Fire | P Pause | R Reset
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
